@@ -1,34 +1,5 @@
 {{ define "main" }}
 
-<div class="product">
-  <h2 class="product__name">Blue cheese</h2>
-  <img class="product__image" src="https://snipcart-hugo-forestry.netlify.com/uploads/blue.jpg" alt="">
-  <p class="product__description">This long-aged cheese made with Penicillium mold is sure to be one of the stinkiest and strong tasting cheese. It comes with one of the best marbling available on the market.</p>
-  <div class="product__button-container">
-    <div class="product__price">$12.95</div>
-    <button
-      class="snipcart-add-item buy-button"
-      data-item-id="BLUE_CHEESE"
-      data-item-name="Blue cheese"
-      data-item-price="12.95"
-      data-item-url="https://vibrant-wescoff-8f9e5c.netlify.com/products/"
-      data-item-description="This long-aged cheese made with Penicillium mold is sure to be one of the stinkiest and strong tasting cheese. It comes with one of the best marbling available on the market.">
-      Testing Add to cart
-    </button>
-  </div>
-</div>
-
-<br>
-<button
-      class="snipcart-add-item buy-button"
-      data-item-id="1312"
-      data-item-name="test"
-      data-item-price="12"
-      data-item-url="https://vibrant-wescoff-8f9e5c.netlify.com/products/"
-      data-item-description="descrption">
-      Add to cart
-    </button>
-
 {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title) }}
 
 {{ partial "4-up" .Params.intro }}
@@ -39,6 +10,29 @@
   <div class="mw6 ph3 mb3">
     <h3 class="f3 b lh-title mb2">{{ .heading }}</h3>
     <p>{{ .description }}</p>
+
+    <div class="mb4">
+      <h4 class="f3 b lh-title mb3 tc">Dummy testing </h4>
+    
+      <div class="product">
+        <h2 class="product__name">Dummy Product</h2>
+        <img class="product__image" src="https://vibrant-wescoff-8f9e5c.netlify.com/img/products-grid3.jpg" alt="">
+        <p class="product__description">Dummy description</p>
+        <div class="product__button-container">
+          <div class="product__price">€12.95</div>
+          <button
+            class=" btn w-100 w-auto-ns raisesnipcart-add-item buy-button"
+            data-item-id="DUMMY_PRODUCT"
+            data-item-name="DUMMY_PRODUCT"
+            data-item-price="12.95"
+            data-item-url="https://vibrant-wescoff-8f9e5c.netlify.com/products/"
+            data-item-description="This long-aged cheese made with Penicillium mold is sure to be one of the stinkiest and strong tasting cheese. It comes with one of the best marbling available on the market.">
+            Testing Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
