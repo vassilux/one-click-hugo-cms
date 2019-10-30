@@ -13,6 +13,10 @@
   <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
 
 	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700" rel="stylesheet">
+	<script src="https://cdn.snipcart.com/themes/v3.0.2/default/snipcart.js"></script>
+<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.2/default/snipcart.css" />
+<div id="snipcart" data-api-key="N2FhYzEyNGQtOWM1OC00OThiLWE0ODQtMDMwOWFlYmZmYzJhNjM3MDgwNDk4MDM1MzI1MTIz" hidden></div>
+<!-- head --> 
 
 	<!-- Favicons -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
